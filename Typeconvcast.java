@@ -35,12 +35,21 @@ public class Typeconvcast {
         System.out.println(e);
 
         /* ***ASCII VALUE TYPE CASTING*** */
-        int g = 'A';
-        System.out.println(g);
+        int g = 'l';
+        System.out.println("ACSII: " + g);
 
         /* ***TYPE PROMOTION RULES*** */
         System.out.println(45 * 34.97464f);//(int * float = float || int * double = double)
         
+        int i = 6000;
+        float f1 = 34.674592f;
+        char ch = 'l';
+        double d1 = 23.345678934d;
+        short s = 1598;
+        byte b1 = 127;
+        double result = (f1 * b1) + (i / ch) - (d1 - s);
+        System.out.println((f1 * b1) + " | " + (i / ch)+ " | " +(d1 - s));
+        System.out.println(result);
     }
     
 }
