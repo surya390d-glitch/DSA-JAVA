@@ -33,6 +33,10 @@ public class Typeconvcast {
         exceed the byte range. why? because, that the arithmetic value 2000 is
         stored in integer(int range -+2billion)*** */
         System.out.println(e);
+
+        /* ***ASCII VALUE TYPE CASTING*** */
+        int g = 'A';
+        System.out.println(g);
     }
     
 }
