@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Typeconvcast {
     public static void main(String [] args){
         //int num = 34;
@@ -51,6 +52,15 @@ public class Typeconvcast {
         /*  ***********  float    +  integer -  double  = double. */
         System.out.println((f1 * b1) + " | " + (i / ch)+ " | " +(d1 - s));
         System.out.println(result);
+
+        /// CELSIUS TO FAHRENHEIT
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the temperatur in celsius: ");
+        float tempc = in.nextFloat();
+
+        float tempf = (tempc * 9/5 ) + 32;
+        System.out.println("temperature in fahreinheit: "+ tempf);
+        in.close();
     }
     
 }
