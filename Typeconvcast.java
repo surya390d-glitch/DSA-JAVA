@@ -48,6 +48,7 @@ public class Typeconvcast {
         short s = 1598;
         byte b1 = 127;
         double result = (f1 * b1) + (i / ch) - (d1 - s);
+        /*  ***********  float    +  integer -  double  = double. */
         System.out.println((f1 * b1) + " | " + (i / ch)+ " | " +(d1 - s));
         System.out.println(result);
     }
