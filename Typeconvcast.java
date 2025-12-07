@@ -10,7 +10,7 @@ public class Typeconvcast {
         int num1 = (int)(34.89f);/*here the float value has been converted into integer value by using type casting.
         this process happend manually.
         output will print like 34.89 into 34.*/
-        System.out.println(num1); 
+        System.out.println("ans"+num1); 
     }
     
 }
