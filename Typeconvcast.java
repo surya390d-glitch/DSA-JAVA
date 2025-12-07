@@ -23,6 +23,16 @@ public class Typeconvcast {
         int a = 257;
         byte b = (byte)(a);
         System.out.println(b);
+
+        byte c = 40;
+        byte d = 50;
+        byte f = 100;
+        int e = (c*d)/f;
+        /* *** here the c and d is bytes, its using arithmetic operation(40*50=2000). 
+        here the question is, byte range is 256 but the arithmetic operation value is
+        exceed the byte range. why? because, that the arithmetic value 2000 is
+        stored in integer(int range -+2billion)*** */
+        System.out.println(e);
     }
     
 }
