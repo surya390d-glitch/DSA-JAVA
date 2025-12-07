@@ -37,6 +37,10 @@ public class Typeconvcast {
         /* ***ASCII VALUE TYPE CASTING*** */
         int g = 'A';
         System.out.println(g);
+
+        /* ***TYPE PROMOTION RULES*** */
+        System.out.println(45 * 34.97464f);//(int * float = float || int * double = double)
+        
     }
     
 }
