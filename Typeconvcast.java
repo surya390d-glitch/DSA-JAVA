@@ -1,6 +1,8 @@
 public class Typeconvcast {
     public static void main(String [] args){
         //int num = 34;
+
+
         /* ***TYPE CONVERSION UH*** */
         float num = 65;/*here the float value is declared as a integer.
         but the output would be like this = 64 converted into 64.0.
@@ -8,12 +10,19 @@ public class Typeconvcast {
         it's happend during the compile time and automatically.
         therefore it is refered as a type conversion.*/
         System.out.println(num);
+
+
         /* ***TYPE CASTING*** */
         int num1 = (int)(34.89f);/*here the float value has been converted into integer value by using type casting.
         this process happend manually.
         output will print like 34.89 into 34.
         it is also called as "****narrowing conversion****"*/
-        System.out.println("ans"+num1); 
+        System.out.println("ans: "+num1); 
+
+        /* ***AUTOMATIC TYPE PROMOTION IN EXPRESSION*** */
+        int a = 257;
+        byte b = (byte)(a);
+        System.out.println(b);
     }
     
 }
