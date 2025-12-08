@@ -7,7 +7,7 @@ public class Typeconvcast {
         /* ***TYPE CONVERSION UH*** */
         float num = 65;/*here the float value is declared as a integer.
         but the output would be like this = 64 converted into 64.0.
-        why? because, the JVM consider the larger values(integer < float & double > float...etc.).
+        why? because, the JVM consider the larger values as a output(integer < float & double > float...etc.).
         it's happend during the compile time and automatically.
         therefore it is refered as a type conversion.*/
         System.out.println(num);
@@ -32,7 +32,7 @@ public class Typeconvcast {
         /* *** here the c and d is bytes, its using arithmetic operation(40*50=2000). 
         here the question is, byte range is 256 but the arithmetic operation value is
         exceed the byte range. why? because, that the arithmetic value 2000 is
-        stored in integer(int range -+2billion)*** */
+        stored in integer(integer range upto -+2billion)*** */
         System.out.println(e);
 
         /* ***ASCII VALUE TYPE CASTING*** */
