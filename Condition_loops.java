@@ -1,6 +1,17 @@
 import java.util.Scanner;
 public class Condition_loops {
     public static void main(String []args){
+        If_cond();
+        Forloop();
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //PROGRAM FOR IF CONDITION WITH SYNTAX & EXAMPLE//
+    /* syntax for if else condition
+       if(CONTION){
+       //BODY WHATEVER YOU WANT WRITE  
+       } */
+ //FOR EXAMPLE:
+    public static void If_cond(){
         /* ***IF CONDITION */
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your salry amount: ");
@@ -16,5 +27,27 @@ public class Condition_loops {
         }
         System.out.println("salary status: "+ salary);
         in.close();
+    } 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public static void Forloop(){
+     Scanner in = new Scanner(System.in);
+// PROGRAM FOR FORLOOP WITH SYNTAX AND EXAMPLE //
+/* SYNTAX:
+            for(initialization : condition||end : increament) {
+                  //BODY WHATEVER YOU WANT WRITE
+              }    */
+//FOR EXAMPLE:
+
+    for(int i = 0 ; i <= 9 ; i+=1){
+        System.out.print(i+ " ");//output like this : 0123456789 
+    }
+
+    //PRINT NUMBERS FROM 1 TO N
+    System.out.print("\nEnter the number: ");
+    int num = in.nextInt();
+    for(int i= 0 ; i <=num ; i++){
+        System.out.print(i + " ");
+    }
+    in.close();
     }
 }
