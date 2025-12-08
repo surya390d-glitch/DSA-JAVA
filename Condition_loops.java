@@ -1,18 +1,19 @@
 import java.util.Scanner;
 public class Condition_loops {
     public static void main(String []args){
-        If_cond();
+        //If_cond();
         Forloop();
+        whileloop();
     }
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //PROGRAM FOR IF CONDITION WITH SYNTAX & EXAMPLE//
     /* syntax for if else condition
-       if(CONTION){
+        if(CONTION){
        //BODY WHATEVER YOU WANT WRITE  
        } */
  //FOR EXAMPLE:
-    public static void If_cond(){
-        /* ***IF CONDITION */
+/*    public static void If_cond(){
+        //IF CONDITION 
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your salry amount: ");
         int salary = in.nextInt();
@@ -27,10 +28,9 @@ public class Condition_loops {
         }
         System.out.println("salary status: "+ salary);
         in.close();
-    } 
+    } */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void Forloop(){
-     Scanner in = new Scanner(System.in);
 // PROGRAM FOR FORLOOP WITH SYNTAX AND EXAMPLE //
 /* SYNTAX:
             for(initialization : condition||end : increament) {
@@ -43,11 +43,27 @@ public class Condition_loops {
     }
 
     //PRINT NUMBERS FROM 1 TO N
+    Scanner in = new Scanner(System.in);
     System.out.print("\nEnter the number: ");
     int num = in.nextInt();
     for(int i= 0 ; i <=num ; i++){
         System.out.print(i + " ");
     }
-    in.close();
+    }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//WHILE LOOP SYNTAX AND EXAMPLE PROGRAM
+/*SYNTAX:
+        inialization;
+        while(CONDITION) {
+            //body(whatever you want write here)
+            increment || decreament
+        }   */
+    public static void whileloop(){
+        int a = 1;
+        System.out.println();
+        while(a != 11){
+            System.out.print(a + " ");
+            a++;
+        }
     }
 }
