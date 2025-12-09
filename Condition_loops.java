@@ -48,7 +48,7 @@ public class Condition_loops {
     Scanner in = new Scanner(System.in);
     System.out.print("\nEnter the number: ");
     int num = in.nextInt();
-    for(int i= 1 ; i <=num ; i+=2){ // in this line have a simple trick, here, the initialization part will be '0'and increament part will be '2' the outoput should be "ODD" numbers will print. and, the initialization part will be '1'and increament part will be '2' the outoput should be "EVEN" numbers will print as output.
+    for(int i= 1 ; i <=num ; i+=2){ // in this line we have a simple trick, here, the initialization part will be '0'and increament part will be '2' the outoput should be "ODD" numbers will print. and, the initialization part will be '1'and increament part will be '2' the outoput should be "EVEN" numbers will print as output.
         System.out.print(i + " ");
     }
     }
