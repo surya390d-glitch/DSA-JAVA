@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Condition_loops {
     public static void main(String []args){
-        //If_cond();
-        Forloop();
+        If_cond();
+        //Forloop();
         whileloop();
     }
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12,7 +12,7 @@ public class Condition_loops {
        //BODY WHATEVER YOU WANT WRITE  
        } */
  //FOR EXAMPLE:
-/*    public static void If_cond(){
+    public static void If_cond(){
         //IF CONDITION 
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your salry amount: ");
@@ -28,14 +28,14 @@ public class Condition_loops {
         }
         System.out.println("salary status: "+ salary);
         in.close();
-    } */
+    } 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public static void Forloop(){
+/*    public static void Forloop(){
 // PROGRAM FOR FORLOOP WITH SYNTAX AND EXAMPLE //
-/* SYNTAX:
-            for(initialization : condition||end : increament) {
+   //SYNTAX:
+         //   for(initialization : condition||end : increament) {
                   //BODY WHATEVER YOU WANT WRITE
-              }    */
+                }    
 //FOR EXAMPLE:
 
     for(int i = 0 ; i <= 9 ; i+=1){
@@ -49,7 +49,7 @@ public class Condition_loops {
     for(int i= 0 ; i <=num ; i++){
         System.out.print(i + " ");
     }
-    }
+    }*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //WHILE LOOP SYNTAX AND EXAMPLE PROGRAM
 /*SYNTAX:
@@ -59,11 +59,11 @@ public class Condition_loops {
             increment || decreament
         }   */
     public static void whileloop(){
-        int a = 1;
+        int a = 1; //INITIALIZATION
         System.out.println();
-        while(a != 11){
+        while(a != 11){ //CONDITION
             System.out.print(a + " ");
-            a++;
+            a++; //INCREAMENT || DECREAMENT
         }
     }
 }
