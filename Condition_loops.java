@@ -1,10 +1,11 @@
 import java.util.Scanner;
 public class Condition_loops {
     public static void main(String []args){
-        If_cond();
-        //Forloop();
+        //If_cond();
+        Forloop();
         whileloop();
     }
+    //IF ELSE CONDITION
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //PROGRAM FOR IF CONDITION WITH SYNTAX & EXAMPLE//
     /* syntax for if else condition
@@ -12,7 +13,7 @@ public class Condition_loops {
        //BODY WHATEVER YOU WANT WRITE  
        } */
  //FOR EXAMPLE:
-    public static void If_cond(){
+/*    public static void If_cond(){
         //IF CONDITION 
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your salry amount: ");
@@ -28,17 +29,18 @@ public class Condition_loops {
         }
         System.out.println("salary status: "+ salary);
         in.close();
-    } 
+    } */
+    //FOR LOOP
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*    public static void Forloop(){
+    public static void Forloop(){
 // PROGRAM FOR FORLOOP WITH SYNTAX AND EXAMPLE //
    //SYNTAX:
          //   for(initialization : condition||end : increament) {
                   //BODY WHATEVER YOU WANT WRITE
-                }    
+               // }    
 //FOR EXAMPLE:
 
-    for(int i = 0 ; i <= 9 ; i+=1){
+    for(int i = 0 ; i <= 9 ; i++){
         System.out.print(i+ " ");//output like this : 0123456789 
     }
 
@@ -46,10 +48,12 @@ public class Condition_loops {
     Scanner in = new Scanner(System.in);
     System.out.print("\nEnter the number: ");
     int num = in.nextInt();
-    for(int i= 0 ; i <=num ; i++){
+    for(int i= 1 ; i <=num ; i+=2){ // in this line have a simple trick, here, the initialization part will be '0'and increament part will be '2' the outoput should be "ODD" numbers will print. and, the initialization part will be '1'and increament part will be '2' the outoput should be "EVEN" numbers will print as output.
         System.out.print(i + " ");
     }
-    }*/
+    }
+
+    //WHILE LOOP
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //WHILE LOOP SYNTAX AND EXAMPLE PROGRAM
 /*SYNTAX:
