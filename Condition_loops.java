@@ -5,6 +5,7 @@ public class Condition_loops {
         Forloop();
         whileloop();
         dowhile();
+        max();
     }
     //IF ELSE CONDITION
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -102,5 +103,19 @@ public class Condition_loops {
             //     i++;
             // }
             // while(i <= 9);
+    }
+    public static void max(){
+        int a = 12;
+        int b = 23;
+        int c = 25;
+        int max = a;
+        if(b > max){
+            max = b;
+
+        }
+        if(c > max){
+            max = c;
+        }
+        System.out.println("maximum number is: " + max);
     }
 }
