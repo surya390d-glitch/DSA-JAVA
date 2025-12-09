@@ -4,6 +4,7 @@ public class Condition_loops {
         //If_cond();
         Forloop();
         whileloop();
+        dowhile();
     }
     //IF ELSE CONDITION
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,5 +70,28 @@ public class Condition_loops {
             System.out.print(a + " ");
             a++; //INCREAMENT || DECREAMENT
         }
+        System.out.println();
+    }
+
+    //DO WHILE LOOP SYNTAX WITH AN EXAMPLE
+    //SYNTAX:
+        /*do{
+            //BODY
+        }
+        while(CONDITION){
+           //BODY write whatever you want
+        }*/
+
+        public static void dowhile(){
+            int i = 1;
+            do{
+                System.out.println("\ndo is execute atleast once. ");
+            }
+            while(i != 1);
+            // do{
+            //     System.out.print(i + " ");
+            //     i++;
+            // }
+            // while(i <= 9);
     }
 }
