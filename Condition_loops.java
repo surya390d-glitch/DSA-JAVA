@@ -49,7 +49,11 @@ public class Condition_loops {
     Scanner in = new Scanner(System.in);
     System.out.print("\nEnter the number: ");
     int num = in.nextInt();
-    for(int i= 1 ; i <=num ; i+=2){ // in this line we have a simple trick, here, the initialization part will be '0'and increament part will be '2' the outoput should be "ODD" numbers will print. and, the initialization part will be '1'and increament part will be '2' the outoput should be "EVEN" numbers will print as output.
+    for(int i= 1 ; i <=num ; i+=2){ /* in this line we have a simple trick, 
+                                    here, the initialization part will be '0'and increament 
+                                    part will be '2' the outoput should be "ODD" numbers will print.
+                                    and, the initialization part will be '1'and increament part 
+                                    will be '2' the outoput should be "EVEN" numbers will print as output.*/
         System.out.print(i + " ");
     }
     }
@@ -87,7 +91,12 @@ public class Condition_loops {
             do{
                 System.out.println("\ndo is execute atleast once. ");
             }
-            while(i != 1);
+            while(i != 1);/*here that the thing (n != 1) is still false but
+                            the 'do' statement will execute atleast once in this program.
+                            and then the next possibility is,even the if 'if' condition will 
+                            be true, the 'do' part is first execute and then execute while.*/
+
+        //ANOTHER EXAMPLE:   
             // do{
             //     System.out.print(i + " ");
             //     i++;
