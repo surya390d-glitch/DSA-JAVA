@@ -220,7 +220,7 @@ public class Condition_loops {
 //in this program was developed by my own creativity stuffs.
     public static void calc(){
         Scanner in = new  Scanner(System.in);
-        while(true){
+        while(true){ //INFINITE WHILE LOOP.
             System.out.println("Enter your operation: ");
             char op = in.next().trim().charAt(0);
             int ans = 0;
