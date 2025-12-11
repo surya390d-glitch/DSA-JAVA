@@ -9,7 +9,8 @@ public class Condition_loops {
         //charprogram();
         //fibonacci();
         //duplicate();
-        reverse();
+        //reverse();
+        calc();
     }
     //IF ELSE CONDITION
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -213,4 +214,64 @@ public class Condition_loops {
         System.out.println(ans);  
         }
     }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//CALCULATOR PROJECT: using 'SWITCH' statement.
+
+//in this program was developed by my own creativity stuffs.
+    public static void calc(){
+        Scanner in = new  Scanner(System.in);
+        while(true){
+            System.out.println("Enter your operation: ");
+            char op = in.next().trim().charAt(0);
+            int ans = 0;
+            if(op =='+' || op == '-' || op == '*' || op == '/' || op == '%'){
+                System.out.print("enter the numbers: ");
+                int num1 = in.nextInt();
+                int num2 = in.nextInt();
+                switch(op){
+                    case '+':
+                    ans = num1 + num2;
+                    System.out.println(num1+" "+op+" "+num2+" = "+ans);
+                    break;
+
+                    case '-':
+                    ans = num1 - num2;
+                    System.out.println(num1+" "+op+" "+num2+" = "+ans);
+                    break;
+
+                    case '*':
+                    if(num1 != 0 && num2 != 0){
+                        ans = num1 * num2;
+                        System.out.println(num1+" "+op+" "+num2+" = "+ans);
+                    }
+                    else{
+                        System.out.println("0's are not allowed to multiplication.");
+                    }
+                    break;
+
+                    case '/':
+                    ans = num1 / num2;
+                    System.out.println(num1+" "+op+" "+num2+" = "+ans);
+                    break;
+
+                    case '%':
+                    ans = num1 % num2;
+                    System.out.println(num1+" "+op+" "+num2+" = "+ans);
+                    break;
+
+                    default:
+                    System.out.println("invalid operation.");
+                }
+            }
+            else if (op == 'x' || op == 'X'){
+                break;
+            }
+            else{
+                System.out.println("this operation doesn't exist. pls,Enter the valid operation.");
+            }
+            System.out.println("result: " + ans);
+        }
+    }    
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
