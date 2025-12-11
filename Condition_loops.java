@@ -8,7 +8,8 @@ public class Condition_loops {
         //Max();
         //charprogram();
         //fibonacci();
-        duplicate();
+        //duplicate();
+        reverse();
     }
     //IF ELSE CONDITION
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -198,6 +199,18 @@ public class Condition_loops {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //revrse program: 
     public static void reverse(){
-        
-    }  
+        int num = 1234567;//original numbers(ascending order)
+        int ans = 0;
+        while(num > 0) {// loop run until num becomes '0'.
+            int rem = num % 10;// get last digit or reminder.
+            num /= 10;//remove the last digit.
+            ans = ans * 10 + rem;//store the last digit in the ans(reverse). 
+                                 //EX: initially ans = '0' and reminder is '7'.
+                                 //here,0 * 10 + 7 = '7'. (0*10=0 & 0+7=7).
+                                 //same,7 * 10 + 6 = '76'.(7*10=70 & 70+6=76)
+                                 //repeat the process for each numbers untill while wil be '0' ,
+                                 //and we get the output like this "7654321".
+        System.out.println(ans);  
+        }
+    }
 }
