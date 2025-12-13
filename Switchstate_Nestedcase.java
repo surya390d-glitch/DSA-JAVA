@@ -22,6 +22,7 @@ public class Switchstate_Nestedcase {
         System.out.print("Enter your day: ");
         String day = in.nextLine();
         Switch(day);
+        Enhanced_Switchstate(day);
     }
     public static void Switch(String day){
         switch(day){ //cases have to be same type as expression.must be constant or literal. 
@@ -43,6 +44,20 @@ public class Switchstate_Nestedcase {
             default://default will executed when non of the above does.
                     //if default is not at the end, put brak after it.
             System.out.println("invalid day. please enter the valid day.");
+        }
+    }
+    public static void Enhanced_Switchstate(String day) {
+        switch (day) { //cases have to be same type as expression.must be constant or literal.
+            //EX: if the switch is days -----> the expression must be a weekdays and weekends.(like sunday, monday,tuesday,...and so on).
+            //duplicate cases are not allowed.
+            case "monday"-> System.out.println("weekday.");
+            case "tuesday" -> System.out.println("weekday.");
+            case "wednesday" -> System.out.println("weekday.");
+            case "thursday" -> System.out.println("weekday.");
+            case "friday" -> System.out.println("weekday.");
+            case "saturday" -> System.out.println("weekend.");
+            case "sunday" -> System.out.println("weekend.");
+            default -> System.out.println("invalid day. please enter the valid day.");
         }
     }
 }
