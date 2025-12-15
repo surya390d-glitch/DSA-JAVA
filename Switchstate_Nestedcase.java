@@ -18,14 +18,20 @@ SYNTAX:
 import java.util.Scanner;
 public class Switchstate_Nestedcase {
     public static void main(String [] args){
+
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your day: ");
         String day = in.nextLine();
+        System.out.print("Enter your amount: ");
+        int amount = in.nextInt();
         //Switch(day);
         //Enhanced_Switchstate(day);
-        switch_method2(day);
+        //switch_method2(day);
+        nested_switch(day,amount);
+        
     }
     public static void Switch(String day){
+
         switch(day){ //cases have to be same type as expression.must be constant or literal. 
                      //EX: if the switch is days -----> the expression must be a weekdays and weekends.(like sunday, monday,tuesday,...and so on).
                      //duplicate cases are not allowed.
@@ -48,9 +54,11 @@ public class Switchstate_Nestedcase {
         }
     }
     public static void Enhanced_Switchstate(String day) {
+
         switch (day) { //cases have to be same type as expression.must be constant or literal.
             //EX: if the switch is days -----> the expression must be a weekdays and weekends.(like sunday, monday,tuesday,...and so on).
             //duplicate cases are not allowed.
+
             case "monday"-> System.out.println("weekday.");
             case "tuesday" -> System.out.println("weekday.");
             case "wednesday" -> System.out.println("weekday.");
@@ -59,15 +67,38 @@ public class Switchstate_Nestedcase {
             case "saturday" -> System.out.println("weekend.");
             case "sunday" -> System.out.println("weekend.");
             default -> System.out.println("invalid day. please enter the valid day.");
+
         }
+
     }
     public static void switch_method2(String day){
+
         switch(day){
+
             case "monday" , "tuesday" , "wednesday" , "thursday" , "friday" -> System.out.println("weekday.");
             case "saturday" , "sunday" -> System.out.println("weekend.");
             default -> System.out.println("invalid day. please enter the valid day.");
+
         }
-            
+    }
+    public static void nested_switch(String day, int amount){
+
+        switch(day){
+
+            case "monday" , "tuesday" , "wednesday" , "thursday" , "friday" -> System.out.println("weekday.");
+            case "saturday" , "sunday" -> {
+    
+                switch(amount){
+
+                case 300,400,500,600,700,800,900,1000 -> System.out.println("weekend + KFC");
+                case 100,200 -> System.out.println("weekend");
+                default -> System.out.println("invalid day or invalid amount. plch enter the valid day and amount.");
+
+                }
+            }
+
+            default -> System.out.println("invalid day. please enter the valid day.");
+        }
 
     }
             
