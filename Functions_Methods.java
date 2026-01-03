@@ -6,9 +6,10 @@ SYNTAX:
    } */
 
 // FOR EAXMPLE:
-
 import java.util.Scanner;
-public class Functions_Methods {    // pass by value of number when you calling the method in main().
+public class Functions_Methods {  
+    static int a = 900; //Shadowing 
+    // pass by value of number when you calling the method in main().
     static void add(int a , int b){// here, the possible error will occurred(non-static method add(a,b)).
         int c;                    //so, we add static method.
         c = a + b;
@@ -138,10 +139,45 @@ for Example:
 
 //change value
 
-    public static void change_Value (int [] arr){
-        arr[4] = 10;
-        System.out.println(arr);
+    public static void change_Value (int [] num){
+        num[4] = 10;
+        //System.out.println(arr);
     }
+////                                                                                                                        
+public static void Scopping(){
+    int num = 10;
+    int a = 104;
+    int b = 50;
+    System.out.println(num);// you access the num only inside this block.
+                            // don't access the num outside the block.
+                            // it's called as "Function Scopping" 
+    {
+       //int a = 20---> you can't reinitialize 'a' but, you can modified the 'a'. because 'a' is already initialized outside the block.
+       //if you initialize inside the block you can only access inside the block.
+       //for ex:
+        a = 89; // here, rassign the original reference variable to soe other value. 'a' is modified.
+        System.out.println(a); // output will be 89(modified)
+    }                        
+    System.out.println(a); // output will be 89(modified).
+
+    //SCOPPING IN FOR LOOP
+    for(int i = 0; i <= 5 ;i ++){
+        System.out.println(i);
+        //int a = 10; you can't reassign it. -----> ***it's same as funcition and method scopping. nothings new.
+    }
+    //System.out.println(i); ---> you can't access the 'i' outside the block.
+
+//verdict for functions and method scopping:
+        /* anything you can initialize outside the block and ubdate inside the block.   */
+}
+
+//SHADOWING:
+public static void shadowing(){
+    //int a = 90;
+    System.out.println(a);
+
+
+}
 
 public static void main(String [] args) {
         Scanner in = new Scanner(System.in);
@@ -159,11 +195,14 @@ public static void main(String [] args) {
         //changestr(name);// 2.that the initialized name will passed here.
         System.out.println(name);// 5.name will be print "sung_gin_woo"
         passname(name); */
-        int [] arr = {12,07,45,6,5,23};
+        /*int [] arr = {12,07,45,6,5,23};
+        System.out.println(Arrays.toString(arr));
         change_Value(arr);
-        System.out.println(arr);
-
-
+        System.out.println(Arrays.toString(arr));*/
+        //Scopping();//scope means where we access the code. 
+        shadowing();
+        //int a = 890;
+        System.out.println(a);
     }
 }
 
