@@ -15,7 +15,7 @@ public class Arr2D {
             for (int j = 0; j < arr2D[i].length; j++) {
                 System.out.println(arr2D[i][j] + " ");
             }
-            System.out.println();
+            System.out.println( );
         }
 
     }
