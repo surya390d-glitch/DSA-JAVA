@@ -1,10 +1,9 @@
-import java.util.*;
 public class Swap {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 56, 77, 8, 9 };
-        swap(arr, 1, 4);
-        System.out.println(Arrays.toString(arr));
-        max(arr,5,7);
+        int[] arr = { 1, 2, 3, 4, 56, 7, 8, 99 };
+        // swap(arr, 1, 4);
+        // System.out.println(Arrays.toString(arr));
+        max(arr,5,8);
     }
 
     static void swap(int[] arr, int ind1, int ind2) {
