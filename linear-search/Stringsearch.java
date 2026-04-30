@@ -1,9 +1,10 @@
 //package DSA-JAVA.linear-search;
-
+import java.util.*;
 public class Stringsearch {
     public static void main(String[] args) {
         String name = "arise";
         char target = 'i';
+        System.out.println(Arrays.toString(name.toCharArray()));
         int ans = check(name, target);
         System.out.println(ans);
     }
@@ -12,11 +13,16 @@ public class Stringsearch {
         if (str.length() == 0) {
             return -1;
         }
-        for (int i = 0; i <= str.length(); i++) {
-            if (str.charAt(i) == target) {
-                return i;
+        // for (int i = 0; i <= str.length(); i++) {
+        //     if (str.charAt(i) == target) {
+        //         return i;
+        //     }
+        //} 
+        for (char ch : str.toCharArray()) {
+            if (ch == target) {
+                return ch;
             }
         }
-        return-1;
+        return -1;
     }
 }
