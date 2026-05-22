@@ -1,0 +1,47 @@
+①. Typos of languages  
+
+
+②. Stack, heap, flowchart.
+
+③.How actually java code executes (class loading, Linking, initiating )
+
+④.Data types (Types convesion & casting).
+
+⑤.if, else, for loop, while loop, do while loop.
+
+⑥. Find max value, lowercase uppercase, Fibonacci, count, reverse, calculator.
+
+⑦.Switch Statement (nested Switch)
+
+⑧.Swap (Code), Scopping, shadowing, variable and Argument (int... V, Sri... v);
+
+9.Function overloading & over ridding
+
+⑩. Prime or not, amstrong.
+
+⑪. Arrays, arrays of Primitive (way of printing array 3 ways) enhanced for print, array.toString
+
+⑫. Array list & Multidimentional array Swap array, Find max array, reverse the array
+
+
+Linear Search:
+
+①.Linear Search
+
+②.String Search
+
+③ string into Character
+
+④ Search in range
+
+⑤ Find Min & max 5
+
+⑥.Search in 2D Array
+
+⑦ 2D Arr Min, Max Sear
+
+⑧ Even num of digit
+
+⑪.Amstrong
+
+⑩.Max wealth.
