@@ -10,6 +10,7 @@ public class Str_search {
         System.out.println(ans);
     }
     
+    
     static boolean search(String str, char target) {
         if (str.length() == 0) {
             return false;

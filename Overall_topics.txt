@@ -1,6 +1,5 @@
 ①. Typos of languages  
 
-
 ②. Stack, heap, flowchart.
 
 ③.How actually java code executes (class loading, Linking, initiating )
@@ -9,7 +8,7 @@
 
 ⑤.if, else, for loop, while loop, do while loop.
 
-⑥. Find max value, lowercase uppercase, Fibonacci, count, reverse, calculator.
+⑥.Find max value, lowercase uppercase, Fibonacci, count, reverse, calculator.
 
 ⑦.Switch Statement (nested Switch)
 
@@ -22,6 +21,7 @@
 ⑪. Arrays, arrays of Primitive (way of printing array 3 ways) enhanced for print, array.toString
 
 ⑫. Array list & Multidimentional array Swap array, Find max array, reverse the array
+
 
 
 Linear Search:
