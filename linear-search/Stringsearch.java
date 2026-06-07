@@ -5,13 +5,13 @@ public class Stringsearch {
         String name = "arise";
         char target = 'i';
         System.out.println(Arrays.toString(name.toCharArray()));
-        int ans = check(name, target);
+        boolean ans = check(name, target);
         System.out.println(ans);
     }
 
-    static int check(String str, char target) {
+    static boolean check(String str, char target) {
         if (str.length() == 0) {
-            return -1;
+            return false;
         }
         // for (int i = 0; i <= str.length(); i++) {
         //     if (str.charAt(i) == target) {
@@ -20,9 +20,9 @@ public class Stringsearch {
         //} 
         for (char ch : str.toCharArray()) {
             if (ch == target) {
-                return ch;
+                return true;
             }
         }
-        return -1;
+        return false;
     }
 }

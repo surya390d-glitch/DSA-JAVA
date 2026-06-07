@@ -39,7 +39,6 @@ public class SearchFrom_range {
             }
         }
         return ans;
-        // return index;
-        // return new int[] { ans, index };
+        // return index; 
     }
 }
