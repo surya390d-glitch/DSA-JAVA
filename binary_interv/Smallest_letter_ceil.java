@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/?envType=problem-list-v2&envId=binary-search
 
-public class Smallest_letter_ceil{
+public class Smallest_letter_ceil {
     public static void main(String[] args) {
         char[] arr = { 'c', 'f', 'j' };
         char target = 'a';
@@ -28,4 +28,6 @@ public class Smallest_letter_ceil{
         }
         return str[start % str.length];//0,1,2 pattern(ex: 0 % 1 = 0, 1 % 2 = 1, 2 % 3 = 2, 3 % 3 = 0.....etc)
     }
+
 }
+
