@@ -1,0 +1,6 @@
+Method similiar to array:
+1. includes(vlaue)
+2. index(vlaue)
+3. slice(start,end)
+4. split(seperator)
+5. join(seperator)
