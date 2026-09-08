@@ -24,6 +24,7 @@ public class compress {
             
         }
         System.out.println(res.toString());
+        System.out.println(res.length());
 
     }
 }
